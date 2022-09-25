@@ -47,8 +47,7 @@ def fun():
 
 # Threading timer works in seconds, converting to minutes
 delay_seconds = int(input('Enter the test time (in minutes): '))
-#delay = delay_seconds*60
-delay = delay_seconds
+delay = delay_seconds*60
 
 start_time = threading.Timer(delay, fun)
 start_time.start()
